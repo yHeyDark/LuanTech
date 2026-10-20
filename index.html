@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LuanTech | Cursos online de programação, e-book e produtos de hardware</title>
+  <meta name="description" content="Cursos online de Python e automação com Arduino, e-book para montar seu primeiro PC e produtos físicos de hardware. Escolha e feche pelo nosso canal de vendas.">
+  <meta name="theme-color" content="#05211A">
+  <meta property="og:title" content="LuanTech | Cursos online, e-book e produtos de hardware">
+  <meta property="og:description" content="Monte a máquina. Depois aprenda a programá-la. Cursos online de programação, e-book e produtos de hardware.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="acessibilidade.js"></script>
+</head>
+
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Ícones reutilizados na página -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></symbol>
+    <symbol id="i-ram" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="10" rx="1.5"/><path d="M6 16v3M10 16v3M14 16v3M18 16v3M6 10.5h2M11 10.5h2M16 10.5h2"/></symbol>
+    <symbol id="i-teclado" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></symbol>
+    <symbol id="i-codigo" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></symbol>
+    <symbol id="i-livro" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></symbol>
+    <symbol id="i-gota" viewBox="0 0 24 24"><path d="M12 3c3.6 4.3 6 7.1 6 10.3a6 6 0 0 1-12 0C6 10.1 8.4 7.3 12 3z"/></symbol>
+    <symbol id="i-mousepad" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="3"/><rect x="10" y="8.5" width="4" height="7" rx="2"/></symbol>
+    <symbol id="i-hdmi" viewBox="0 0 24 24"><path d="M3 7h18v6l-3 4H6l-3-4z"/><path d="M8 11h8"/></symbol>
+    <symbol id="i-usb" viewBox="0 0 24 24"><circle cx="12" cy="19" r="2"/><path d="M12 17V4m0 0-2 2.5M12 4l2 2.5M12 13l4-2.5V9M12 15l-4-2v-2"/></symbol>
+    <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19.5h20"/></symbol>
+    <symbol id="i-ssd" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 12h.01M11 12h6"/></symbol>
+    <symbol id="i-marca" viewBox="0 0 48 48"><path d="M14 3.75H40A4.25 4.25 0 0 1 44.25 8V40A4.25 4.25 0 0 1 40 44.25H8A4.25 4.25 0 0 1 3.75 40V14Z" fill="none" stroke="currentColor" stroke-width="3.5"/><path d="M17 13V31H27" fill="none" stroke="currentColor" stroke-width="3.5"/><circle cx="33.5" cy="31" r="4.25" fill="var(--pad)" stroke="none"/></symbol>
+  </svg>
+
+  <header>
+    <a class="marca" href="#inicio" aria-label="LuanTech, ir para o início">
+      <svg class="logo" viewBox="0 0 232.29 48" aria-hidden="true" focusable="false"><path d="M14 3.75H40A4.25 4.25 0 0 1 44.25 8V40A4.25 4.25 0 0 1 40 44.25H8A4.25 4.25 0 0 1 3.75 40V14Z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="miter"/><path d="M17 13V31H27" fill="none" stroke="currentColor" stroke-width="3.5"/><circle cx="33.5" cy="31" r="4.25" fill="var(--pad)"/><path fill="currentColor" d="M64.45 33.5H77.52V28.78H69.38V6.9H64.45ZM80.07 24.25C80.07 31.27 83.02 33.97 87.67 33.97C90.08 33.97 91.59 33.36 93.39 31.59V33.5H97.82V13.56H93.03V22.95C93.03 25.62 92.82 26.84 92.28 27.74C91.56 28.89 90.26 29.58 88.64 29.58C86.34 29.58 84.86 28.6 84.86 23.31V13.56H80.07ZM101.1 23.6C101.1 29.61 105.31 33.97 111.14 33.97C113.95 33.97 115.86 33.07 117.76 30.91V33.5H122.16V13.56H117.76V16.22C116.11 14.02 114.13 13.09 111.25 13.09C105.34 13.09 101.1 17.52 101.1 23.6ZM105.92 23.71C105.92 20.07 108.33 17.48 111.75 17.48C115.17 17.48 117.62 20.04 117.62 23.67C117.62 26.98 115.46 29.58 111.82 29.58C108.33 29.58 105.92 27.2 105.92 23.71ZM126.01 33.5H130.8V24.1C130.8 21.44 130.98 20.29 131.59 19.32C132.34 18.13 133.6 17.48 135.12 17.48C137.49 17.48 138.93 18.42 138.93 23.74V33.5H143.72V22.81C143.72 19.24 143.36 17.52 142.28 15.97C140.98 14.1 138.82 13.09 136.05 13.09C133.78 13.09 132.2 13.77 130.44 15.46V13.56H126.01Z"/><path fill="currentColor" d="M147.2 9.31H153.29V33.5H155.95V9.31H162.04V6.9H147.2ZM162.29 23.56C162.29 29.4 166.86 33.97 172.69 33.97C177.16 33.97 181.01 30.76 182.27 27.02H179.5C178.38 29.72 175.61 31.52 172.62 31.52C168.59 31.52 165.17 28.42 164.95 24.54H182.77C182.77 17.55 178.34 13.34 172.51 13.34C166.79 13.34 162.29 17.84 162.29 23.56ZM165.02 22.12C165.74 18.34 168.73 15.79 172.48 15.79C176.29 15.79 179.21 18.2 180.11 22.12ZM185.98 23.6C185.98 29.47 190.66 33.97 196.7 33.97C200.77 33.97 203.98 32.2 206.35 27.7H203.33C201.28 30.44 199.37 31.52 196.6 31.52C192.17 31.52 188.68 28.03 188.68 23.67C188.68 19.24 192.1 15.79 196.49 15.79C199.4 15.79 201.82 17.19 203.33 19.78H206.32C204.73 15.82 200.95 13.34 196.52 13.34C190.62 13.34 185.98 17.88 185.98 23.6ZM210.31 33.5H212.98V22.7C212.98 17.88 215.57 15.79 218.99 15.79C222.59 15.79 225.07 18.02 225.07 22.92V33.5H227.74V22.92C227.74 16.33 224.35 13.34 219.24 13.34C216.54 13.34 214.31 14.42 212.98 16.36V6.9H210.31Z"/></svg>
+    </a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#ebook">E-book</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <!-- TROQUE o número do WhatsApp (55 + DDD + número) em todos os links wa.me da página -->
+    <a class="botao botao-topo" href="https://wa.me/5513000000000">Chamar no WhatsApp</a>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ HERO ============ -->
+    <section id="inicio" class="hero" aria-labelledby="titulo-inicio">
+      <div class="hero-texto">
+        <h1 id="titulo-inicio">Monte a máquina. Depois aprenda a programá-la.</h1>
+        <p class="lead">A LuanTech reúne cursos online de programação e automação, um guia para montar o seu primeiro PC e produtos físicos para o seu setup. Você escolhe, fala com a gente e fecha pelo nosso canal de vendas.</p>
+        <menu class="acoes">
+          <li><a class="botao" href="#cursos">Ver cursos online <svg class="icone" aria-hidden="true"><use href="#i-seta"/></svg></a></li>
+          <li><a class="botao botao-sec" href="#produtos">Ver produtos físicos</a></li>
+        </menu>
+        <ul class="fatos" aria-label="Em resumo">
+          <li>Cursos online a partir de R$ 97,00</li>
+          <li>E-book para montar seu primeiro PC por R$ 29,90</li>
+          <li>Compra e inscrição pelo nosso canal de vendas</li>
+        </ul>
+      </div>
+
+      <!-- Chip com trilhas: as duas rotas em destaque levam às seções de peças e de cursos -->
+      <div class="hero-arte">
+        <svg class="arte" viewBox="0 0 680 520" role="group" aria-labelledby="arte-titulo">
+          <title id="arte-titulo">Um chip com trilhas que levam aos cursos online e aos produtos físicos</title>
+
+          <g class="decor" aria-hidden="true">
+            <path class="fio" pathLength="1" style="--i:3" d="M384 230H414L430 246H500"/>
+            <path class="fio" pathLength="1" style="--i:4" d="M384 260H600"/>
+            <path class="fio" pathLength="1" style="--i:5" d="M384 290H420L440 310H520"/>
+            <path class="fio" pathLength="1" style="--i:2" d="M176 200H124L100 224V330"/>
+            <path class="fio" pathLength="1" style="--i:3" d="M176 260H24"/>
+            <path class="fio" pathLength="1" style="--i:4" d="M176 320H140L116 344V420L96 440V520"/>
+            <path class="fio" pathLength="1" style="--i:1" d="M220 156V110L240 90V0"/>
+            <path class="fio" pathLength="1" style="--i:2" d="M280 156V56"/>
+            <path class="fio" pathLength="1" style="--i:3" d="M340 156V126L362 104H430L460 74H520"/>
+            <path class="fio" pathLength="1" style="--i:2" d="M250 364V420L230 440V520"/>
+            <path class="fio" pathLength="1" style="--i:3" d="M310 364V466"/>
+            <path class="fio" pathLength="1" style="--i:4" d="M340 364V396L372 428H440L462 450H520"/>
+            <circle class="ponto" style="--i:3" cx="506" cy="246" r="4"/>
+            <circle class="ponto" style="--i:4" cx="607" cy="260" r="4"/>
+            <circle class="ponto" style="--i:5" cx="526" cy="310" r="4"/>
+            <circle class="ponto" style="--i:2" cx="100" cy="338" r="4"/>
+            <circle class="ponto" style="--i:3" cx="17" cy="260" r="4"/>
+            <circle class="ponto" style="--i:2" cx="280" cy="48" r="4"/>
+            <circle class="ponto" style="--i:3" cx="526" cy="74" r="4"/>
+            <circle class="ponto" style="--i:3" cx="310" cy="474" r="4"/>
+            <circle class="ponto" style="--i:4" cx="526" cy="450" r="4"/>
+          </g>
+
+          <g class="chip" aria-hidden="true">
+            <g class="pinos">
+              <rect x="370" y="196" width="14" height="8"/><rect x="370" y="226" width="14" height="8"/><rect x="370" y="256" width="14" height="8"/><rect x="370" y="286" width="14" height="8"/><rect x="370" y="316" width="14" height="8"/>
+              <rect x="176" y="196" width="14" height="8"/><rect x="176" y="256" width="14" height="8"/><rect x="176" y="316" width="14" height="8"/>
+              <rect x="216" y="156" width="8" height="14"/><rect x="276" y="156" width="8" height="14"/><rect x="336" y="156" width="8" height="14"/>
+              <rect x="246" y="350" width="8" height="14"/><rect x="306" y="350" width="8" height="14"/><rect x="336" y="350" width="8" height="14"/>
+            </g>
+            <rect class="chip-corpo" x="190" y="170" width="180" height="180" rx="14"/>
+            <rect class="chip-die" x="228" y="208" width="104" height="104" rx="6"/>
+            <path class="chip-l" d="M254 234V284H290"/>
+            <circle class="chip-pad" cx="306" cy="284" r="9"/>
+            <circle class="chip-pino1" cx="204" cy="184" r="3.5"/>
+          </g>
+
+          <!-- Rota 1: peças -->
+          <a class="rota" href="#cursos" aria-label="Ver cursos online">
+            <path class="alvo" d="M384 200H436L476 160H566"/>
+            <path class="fio fio-rota" pathLength="1" style="--i:6" d="M384 200H436L476 160H566"/>
+            <path class="pulso" pathLength="1" d="M384 200H436L476 160H566"/>
+            <g class="pad-rota" style="--i:7"><circle cx="574" cy="160" r="9"/><circle class="miolo" cx="574" cy="160" r="3.5"/></g>
+            <text class="rotulo" style="--i:7" x="566" y="136">Cursos online</text>
+          </a>
+
+          <!-- Rota 2: cursos -->
+          <a class="rota" href="#produtos" aria-label="Ver produtos físicos">
+            <path class="alvo" d="M384 320H436L476 360H566"/>
+            <path class="fio fio-rota" pathLength="1" style="--i:7" d="M384 320H436L476 360H566"/>
+            <path class="pulso" pathLength="1" d="M384 320H436L476 360H566"/>
+            <g class="pad-rota" style="--i:8"><circle cx="574" cy="360" r="9"/><circle class="miolo" cx="574" cy="360" r="3.5"/></g>
+            <text class="rotulo" style="--i:8" x="566" y="398">Produtos físicos</text>
+          </a>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ CAMINHOS ============ -->
+    <section id="caminhos" class="secao" aria-labelledby="titulo-caminhos">
+      <h2 id="titulo-caminhos">Por onde você quer começar?</h2>
+      <ul class="caminhos">
+        <li>
+          <a href="#cursos">
+            <svg class="icone-grande" aria-hidden="true"><use href="#i-codigo"/></svg>
+            <span class="caminho-texto"><strong>Quero aprender a programar</strong><span>Python do zero ou automação com Arduino, em cursos online.</span></span>
+            <span class="seta" aria-hidden="true"><svg class="icone"><use href="#i-seta"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a href="#ebook">
+            <svg class="icone-grande" aria-hidden="true"><use href="#i-livro"/></svg>
+            <span class="caminho-texto"><strong>Quero montar meu primeiro PC</strong><span>Comece pelo guia e depois escolha as peças.</span></span>
+            <span class="seta" aria-hidden="true"><svg class="icone"><use href="#i-seta"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a href="#produtos">
+            <svg class="icone-grande" aria-hidden="true"><use href="#i-cpu"/></svg>
+            <span class="caminho-texto"><strong>Quero comprar produtos de hardware</strong><span>Kit Arduino, SSD, pasta térmica, cabos e acessórios para o seu setup.</span></span>
+            <span class="seta" aria-hidden="true"><svg class="icone"><use href="#i-seta"/></svg></span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ CURSOS ============ -->
+    <section id="cursos" class="secao" aria-labelledby="titulo-cursos">
+      <div class="cursos-grade">
+        <div class="cursos-resumo">
+          <h2 id="titulo-cursos">Cursos online para aprender programação na prática</h2>
+          <p>Comece pela lógica com Python ou vá direto para a automação com Arduino. Escolha o curso, fale com a gente e faça a inscrição pelo nosso canal de vendas.</p>
+          <ul class="fatos" aria-label="Como são os cursos">
+            <li>Cursos online</li>
+            <li>Python do zero, para quem está começando</li>
+            <li>Inscrição pelo nosso canal de vendas</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="ofertas">
+          <li>
+            <svg class="icone-grande" aria-hidden="true"><use href="#i-codigo"/></svg>
+            <div class="oferta-corpo"><h3>Lógica de Programação para Iniciantes</h3><p>Curso de Python do zero.</p></div>
+            <div class="oferta-rodape">
+              <div class="preco"><span class="valor">R$ 97,00</span><span>Curso online</span></div>
+              <a class="botao" href="https://wa.me/5513000000000?text=Ol%C3%A1%21%20Quero%20me%20inscrever%20no%20curso%3A%20L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20para%20Iniciantes.">Quero este curso <svg class="icone" aria-hidden="true"><use href="#i-seta"/></svg></a>
+            </div>
+          </li>
+          <li>
+            <svg class="icone-grande" aria-hidden="true"><use href="#i-cpu"/></svg>
+            <div class="oferta-corpo"><h3>Automação Residencial com Arduino</h3><p>Programação de placas e sensores.</p></div>
+            <div class="oferta-rodape">
+              <div class="preco"><span class="valor">R$ 147,00</span><span>Curso online</span></div>
+              <a class="botao" href="https://wa.me/5513000000000?text=Ol%C3%A1%21%20Quero%20me%20inscrever%20no%20curso%3A%20Automa%C3%A7%C3%A3o%20Residencial%20com%20Arduino.">Quero este curso <svg class="icone" aria-hidden="true"><use href="#i-seta"/></svg></a>
+            </div>
+          </li>
+          </ul>
+          <p class="veja-tambem">Para praticar com Arduino, veja o <a href="#produtos">Kit Inicial nos produtos físicos</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ E-BOOK ============ -->
+    <section id="ebook" class="secao" aria-labelledby="titulo-ebook">
+      <div class="ebook-grade">
+        <!-- Capa provisória: trocar pela capa real do e-book -->
+        <div class="capa" role="img" aria-label="Capa provisória do e-book Guia Prático: Como Montar seu Primeiro PC">
+          <svg class="marca-capa" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#i-marca"/></svg>
+          <div class="capa-titulo"><span>Guia prático</span><strong>Como montar seu primeiro PC</strong></div>
+        </div>
+        <div class="ebook-texto">
+          <h2 id="titulo-ebook">Guia prático: como montar seu primeiro PC</h2>
+          <p>Um guia para escolher as peças e montar um computador. Leia, escolha o que comprar e monte o seu.</p>
+          <div class="preco preco-grande"><span class="valor">R$ 29,90</span><span>E-book</span></div>
+          <menu class="acoes">
+            <li><a class="botao" href="https://wa.me/5513000000000?text=Ol%C3%A1%21%20Quero%20o%20e-book%3A%20Guia%20Pr%C3%A1tico%3A%20Como%20Montar%20seu%20Primeiro%20PC.">Quero o e-book <svg class="icone" aria-hidden="true"><use href="#i-seta"/></svg></a></li>
+            <li><a class="botao botao-sec" href="#produtos">Ver produtos físicos</a></li>
+          </menu>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUTOS ============ -->
+    <section id="produtos" class="secao" aria-labelledby="titulo-produtos">
+      <div class="cabeca">
+        <h2 id="titulo-produtos">Produtos físicos para o seu setup</h2>
+        <p>Kit de Arduino, pasta térmica, SSD e acessórios. Os produtos sem preço na lista ainda estão sendo atualizados: chame a gente e passamos o valor.</p>
+      </div>
+
+      <ul class="datasheet">
+        <li>
+          <svg class="icone-grande" aria-hidden="true"><use href="#i-cpu"/></svg>
+          <div class="ds-texto"><h3>Kit Inicial Arduino</h3><p>Placa + sensores para começar.</p></div>
+          <div class="preco"><span class="valor">R$ 120,00</span></div>
+          <a class="botao botao-sec" href="https://wa.me/5513000000000?text=Ol%C3%A1%21%20Quero%20comprar%3A%20Kit%20Inicial%20Arduino.">Comprar <span class="so-leitor">Kit Inicial Arduino</span></a>
+        </li>
+        <li>
+          <svg class="icone-grande" aria-hidden="true"><use href="#i-gota"/></svg>
+          <div class="ds-texto"><h3>Pasta térmica de alta performance</h3><p>Para a montagem e a manutenção do seu computador.</p></div>
+          <div class="preco"><span class="valor">R$ 35,00</span></div>
+          <a class="botao botao-sec" href="https://wa.me/5513000000000?text=Ol%C3%A1%21%20Quero%20comprar%3A%20Pasta%20t%C3%A9rmica%20de%20alta%20performance.">Comprar <span class="so-leitor">Pasta térmica de alta performance</span></a>
+        </li>
+        <li>
+          <svg class="icone-grande" aria-hidden="true"><use href="#i-ssd"/></svg>
+          <div class="ds-texto"><h3>SSD Patriot Burst Elite</h3><p>Mais velocidade e espaço para o seu equipamento.</p></div>
+          <div class="preco"><span class="valor valor-consulta">Consulte o preço</span></div>
+          <a class="botao botao-sec" href="https://wa.me/5513000000000?text=Ol%C3%A1%21%20Qual%20%C3%A9%20o%20pre%C3%A7o%20de%3A%20SSD%20Patriot%20Burst%20Elite%3F">Consultar preço <span class="so-leitor">SSD Patriot Burst Elite</span></a>
+        </li>
+        <li>
+          <svg class="icone-grande" aria-hidden="true"><use href="#i-mousepad"/></svg>
+          <div class="ds-texto"><h3>Mousepad gamer</h3><p>Uma boa superfície para o mouse no seu setup.</p></div>
+          <div class="preco"><span class="valor valor-consulta">Consulte o preço</span></div>
+          <a class="botao botao-sec" href="https://wa.me/5513000000000?text=Ol%C3%A1%21%20Qual%20%C3%A9%20o%20pre%C3%A7o%20de%3A%20Mousepad%20gamer%3F">Consultar preço <span class="so-leitor">Mousepad gamer</span></a>
+        </li>
+        <li>
+          <svg class="icone-grande" aria-hidden="true"><use href="#i-hdmi"/></svg>
+          <div class="ds-texto"><h3>Cabo HDMI 2.1</h3><p>Para ligar o monitor ou a TV ao computador.</p></div>
+          <div class="preco"><span class="valor valor-consulta">Consulte o preço</span></div>
+          <a class="botao botao-sec" href="https://wa.me/5513000000000?text=Ol%C3%A1%21%20Qual%20%C3%A9%20o%20pre%C3%A7o%20de%3A%20Cabo%20HDMI%202.1%3F">Consultar preço <span class="so-leitor">Cabo HDMI 2.1</span></a>
+        </li>
+        <li>
+          <svg class="icone-grande" aria-hidden="true"><use href="#i-usb"/></svg>
+          <div class="ds-texto"><h3>Hub USB de 4 portas</h3><p>Mais quatro portas USB para o seu equipamento.</p></div>
+          <div class="preco"><span class="valor valor-consulta">Consulte o preço</span></div>
+          <a class="botao botao-sec" href="https://wa.me/5513000000000?text=Ol%C3%A1%21%20Qual%20%C3%A9%20o%20pre%C3%A7o%20de%3A%20Hub%20USB%20de%204%20portas%3F">Consultar preço <span class="so-leitor">Hub USB de 4 portas</span></a>
+        </li>
+        <li>
+          <svg class="icone-grande" aria-hidden="true"><use href="#i-laptop"/></svg>
+          <div class="ds-texto"><h3>Suporte ergonômico para notebook</h3><p>Deixa o notebook numa altura melhor para trabalhar.</p></div>
+          <div class="preco"><span class="valor valor-consulta">Consulte o preço</span></div>
+          <a class="botao botao-sec" href="https://wa.me/5513000000000?text=Ol%C3%A1%21%20Qual%20%C3%A9%20o%20pre%C3%A7o%20de%3A%20Suporte%20ergon%C3%B4mico%20para%20notebook%3F">Consultar preço <span class="so-leitor">Suporte ergonômico para notebook</span></a>
+        </li>
+      </ul>
+
+      <h3 class="subtitulo" id="titulo-passos">Comprar leva três passos</h3>
+      <ol class="passos" aria-labelledby="titulo-passos">
+        <li>
+          <span class="no" aria-hidden="true">1</span>
+          <h4>Escolha o produto</h4>
+          <p>Veja a lista aqui e decida o que você precisa.</p>
+        </li>
+        <li>
+          <span class="no" aria-hidden="true">2</span>
+          <h4>Fale com a gente</h4>
+          <p>Confirme preço, disponibilidade e se o produto serve para o seu equipamento.</p>
+        </li>
+        <li>
+          <span class="no" aria-hidden="true">3</span>
+          <h4>Finalize a compra</h4>
+          <p>Feche pelo nosso canal de vendas e pronto.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section id="sobre" class="secao" aria-labelledby="titulo-sobre">
+      <div class="sobre-grade">
+        <div>
+          <h2 id="titulo-sobre">Sobre a LuanTech</h2>
+          <p class="manifesto">A LuanTech nasceu da experiência de quem trabalha com tecnologia e quer facilitar o acesso a bons equipamentos e a bons conhecimentos.</p>
+          <dl class="duas-frentes">
+            <div><dt>Produtos</dt><dd>Kits, peças e acessórios selecionados, com atendimento claro.</dd></div>
+            <div><dt>Conteúdo</dt><dd>Cursos online e e-book para aprender na prática, feitos por quem trabalha na área.</dd></div>
+          </dl>
+        </div>
+        <!-- Trocar pela foto real da equipe ou do espaço -->
+        <div class="foto-pendente" role="img" aria-label="Espaço reservado para a foto da equipe ou do espaço da LuanTech"><span>Foto da equipe ou do espaço</span></div>
+      </div>
+    </section>
+
+    <!-- ============ DÚVIDAS ============ -->
+    <section id="duvidas" class="secao" aria-labelledby="titulo-duvidas">
+      <div class="duvidas-grade">
+        <h2 id="titulo-duvidas">Dúvidas frequentes</h2>
+        <!-- Respostas provisórias: confirmar cada uma com a empresa -->
+        <div class="duvidas">
+          <details name="duvida">
+            <summary>Como faço para comprar?<span class="mais" aria-hidden="true"></span></summary>
+            <p>Escolha o curso, o e-book ou o produto, chame a gente e confirme preço e disponibilidade. A compra e a inscrição são finalizadas pelo nosso canal de vendas.</p>
+          </details>
+          <details name="duvida">
+            <summary>Como funcionam os cursos online?<span class="mais" aria-hidden="true"></span></summary>
+            <p>Os cursos são online. Chame a gente para combinar a inscrição e o acesso ao conteúdo.</p>
+          </details>
+          <details name="duvida">
+            <summary>Preciso saber programar para fazer o curso de Python?<span class="mais" aria-hidden="true"></span></summary>
+            <p>Não. O curso Lógica de Programação para Iniciantes ensina Python do zero.</p>
+          </details>
+          <details name="duvida">
+            <summary>O e-book serve para quem nunca montou um computador?<span class="mais" aria-hidden="true"></span></summary>
+            <p>Sim. O guia ajuda a escolher as peças e a montar um computador, e foi feito para o seu primeiro PC.</p>
+          </details>
+          <details name="duvida">
+            <summary>Por que alguns produtos estão sem preço?<span class="mais" aria-hidden="true"></span></summary>
+            <p>O valor desses produtos ainda está sendo atualizado na página. Chame a gente e passamos o preço de hoje.</p>
+          </details>
+          <details name="duvida">
+            <summary>Como sei se o produto serve para o meu computador?<span class="mais" aria-hidden="true"></span></summary>
+            <p>Conte para a gente qual é o seu equipamento e o que você quer melhorar. Conferimos antes de você fechar.</p>
+          </details>
+          <details name="duvida">
+            <summary>Qual é o prazo de garantia dos produtos?<span class="mais" aria-hidden="true"></span></summary>
+            <p>O prazo depende do produto. Confirme o do produto que você quer antes de fechar.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ CONTATO ============ -->
+  <footer id="contato" aria-labelledby="titulo-contato">
+    <div class="cta-final">
+      <h2 id="titulo-contato">Fale com a gente e comece pelo que você precisa</h2>
+      <p>Tire dúvidas sobre um curso, o e-book ou um produto. A resposta vem direto de quem atende na LuanTech.</p>
+      <menu class="acoes">
+        <li><a class="botao" href="https://wa.me/5513000000000">Chamar no WhatsApp <svg class="icone" aria-hidden="true"><use href="#i-seta"/></svg></a></li>
+        <li><a class="botao botao-sec" href="mailto:contato@luantech.com.br">Enviar e-mail</a></li>
+      </menu>
+    </div>
+    <!-- Dados provisórios: trocar pelos contatos reais -->
+    <address>
+      <p><span>E-mail</span><a href="mailto:contato@luantech.com.br">contato@luantech.com.br</a></p>
+      <p><span>Telefone</span><a href="tel:+5513000000000">(13) 0000-0000</a></p>
+      <p><span>Onde</span>Santos, SP</p>
+    </address>
+    <small>&copy; <time id="ano" datetime="2026">2026</time> LuanTech. Todos os direitos reservados. Esta página não coleta dados dos visitantes. Suas preferências de acessibilidade ficam salvas apenas no seu aparelho.</small>
+  </footer>
+
+  <!-- Barra de contato fixa, só no celular -->
+  <div class="barra-cta">
+    <a class="botao" href="https://wa.me/5513000000000">Chamar no WhatsApp <svg class="icone" aria-hidden="true"><use href="#i-seta"/></svg></a>
+  </div>
+
+  <script src="principal.js" defer></script>
+</body>
+</html>
